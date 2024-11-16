@@ -43,12 +43,12 @@ jobs:
           name: test-results
           path: target/surefire-reports
 
-      #   - name: Upload Extent Report
-      #     if: always()
-      #     uses: actions/upload-artifact@v4
-      #     with:
-      #       name: extent-report
-      #       path: target/reports
+      - name: Upload Extent Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extent-report
+          path: target/reports
 
       - name: Prepare Report for GitHub Pages
         run: |
