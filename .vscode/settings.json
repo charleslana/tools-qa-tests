@@ -1,0 +1,34 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cSpell.words": [
+    "Acao",
+    "aventstack",
+    "Awaitility",
+    "classpath",
+    "Classpath",
+    "Condicao",
+    "Dcucumber",
+    "Dgroups",
+    "Dskip",
+    "Dtest",
+    "extentreports",
+    "Pdev",
+    "Pprod",
+    "sadface",
+    "Saucedemo"
+  ],
+  "java.compile.nullAnalysis.mode": "automatic",
+  "cucumberautocomplete.steps": [
+    "src/test/java/com/example/tools/qa/steps/*.java",
+    "src/test/resources/**/*.feature"
+  ],
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.formatConfOverride": {
+    "Funcionalidade": 0,
+    "Cenário": 1,
+    "Dado": 2,
+    "Quando": 2,
+    "E": 2,
+    "Então": 2
+  }
+}
