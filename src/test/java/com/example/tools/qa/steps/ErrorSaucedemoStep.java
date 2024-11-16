@@ -17,7 +17,7 @@ public class ErrorSaucedemoStep {
     @When("eu tento realizar uma ação que falha")
     public void euTentoRealizarUmaAcaoQueFalha() {
         if (!condition) {
-            throw new RuntimeException("A ação falhou devido à condição de erro");
+            Assertions.fail("A condição de erro foi encontrada e falhou conforme esperado.");
         }
     }
 
