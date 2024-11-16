@@ -50,6 +50,18 @@ jobs:
           name: extent-report
           path: target/reports
 
+      - name: List reports directory
+        run: ls -la target/reports
+
+      - name: Check if report exists
+        run: |
+          report_file=$(find target/reports -name "*.html" | sort -V | tail -n 1)
+          if [ ! -f "$report_file" ]; then
+            echo "No report found"
+            exit 1
+          fi
+          echo "Report found: $report_file"
+
       - name: Prepare Extent Report for GitHub Pages
         run: |
           mkdir -p public
