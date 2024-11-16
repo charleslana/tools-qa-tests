@@ -17,13 +17,12 @@ public class ErrorSaucedemoStep {
     @When("eu tento realizar uma ação que falha")
     public void euTentoRealizarUmaAcaoQueFalha() {
         if (!condition) {
-            // Assertions.fail("A condição de erro foi encontrada e falhou conforme
-            // esperado.");
+            throw new RuntimeException("A ação falhou devido à condição de erro");
         }
     }
 
     @Then("eu deveria ver uma falha")
     public void euDeveriaVerUmaFalha() {
-        // Assertions.fail("Este é um teste de erro proposital.");
+        Assertions.fail("Este é um teste de erro proposital.");
     }
 }
